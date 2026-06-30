@@ -1,0 +1,24 @@
+# Dependencias (cualquier nivel)
+**/node_modules/
+
+# Variables de entorno (cualquier nivel)
+**/.env
+**/.env.*
+!**/.env.example
+
+# Build .NET
+**/bin/
+**/obj/
+
+# Logs
+**/logs/
+*.log
+**/*.log
+
+# Claves de Data Protection de auth-service (no deben versionarse)
+**/AuthService.Api/keys/
+
+# Archivos subidos en runtime para pruebas (ej: ai-service/uploads/) - no versionar.
+# Se ignora el contenido pero se conserva .gitkeep para que la carpeta exista tras clonar.
+**/uploads/*
+!**/uploads/.gitkeep
